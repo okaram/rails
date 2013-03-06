@@ -1,7 +1,4 @@
-Test1::Application.routes.draw do
-  resources :things
-
-  match '/qr' =>'Qr#qr'
+Test1::Application.routes.draw do  match '/qr' =>'Qr#qr'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
