@@ -3,6 +3,9 @@ UrlShortener::Application.routes.draw do
 
 	match '/r/:id' => 'redirector#redirect'
 	resources :references
+	
+	root :to => 'references#index'
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
