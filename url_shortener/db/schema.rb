@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130307183724) do
+ActiveRecord::Schema.define(:version => 20130308022856) do
+
+  create_table "references", :force => true do |t|
+    t.string   "url"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "visit_count"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
