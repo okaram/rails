@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 URL: <%= @reference.url %><br>
-
+Short URL: <%= root_url+'r/'+@reference.id.to_s %> <br>
 Visit Count: <%= @reference.visit_count  %><br>
 
 <%= link_to 'Edit', edit_reference_path(@reference) %> |
